@@ -5,6 +5,8 @@ CREATE DATABASE clothes_db;
 \c clothes_db
 
 -- Create tables for data
+DROP TABLE IF EXISTS clothes;
+
 CREATE table clothes (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50),
