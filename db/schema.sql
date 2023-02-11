@@ -12,9 +12,10 @@ CREATE table clothes (
     name VARCHAR(50),
     brand VARCHAR(50),
     category VARCHAR(30) NOT NULL,
-    shop_url TEXT,
     img_url TEXT,
+    shop_url TEXT,
     is_favorite BOOLEAN,
+    is_owned BOOLEAN,
     is_selected BOOLEAN
 );
 

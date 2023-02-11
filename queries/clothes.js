@@ -27,8 +27,8 @@ const getClothesById = async (id) => {
 const createClothes = async (clothes) => {
     try {
         const newClothes = await db.one(
-            'INSERT INTO clothes (name, brand, category, shop_url, img_url, is_favorite, is_selected) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *',
-            [clothes.name, clothes.brand, clothes.category, clothes.shop_url, clothes.img_url, clothes.is_favorite, clothes.is_selected]
+            'INSERT INTO clothes (name, brand, category, shop_url, img_url, is_favorite, is_owned, is_selected) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *',
+            [clothes.name, clothes.brand, clothes.category, clothes.shop_url, clothes.img_url, clothes.is_favorite, clothes.is_owned, clothes.is_selected]
         );
         return newClothes;
     } catch (error) {
@@ -40,8 +40,8 @@ const createClothes = async (clothes) => {
 const updateClothes = async (id, clothes) => { 
     try {
         const updatedClothes = await db.one(
-            'UPDATE clothes SET name = $1, brand = $2, category = $3, shop_url = $4, img_url = $5, is_favorite = $6, is_selected = $7 WHERE id = $8 RETURNING *',
-            [clothes.name, clothes.brand, clothes.category, clothes.shop_url, clothes.img_url, clothes.is_favorite, clothes.is_selected, id]
+            'UPDATE clothes SET name = $1, brand = $2, category = $3, shop_url = $4, img_url = $5, is_favorite = $6, is_owned = $7, is_selected = $8 WHERE id = $9 RETURNING *',
+            [clothes.name, clothes.brand, clothes.category, clothes.shop_url, clothes.img_url, clothes.is_favorite, clothes.is_owned, clothes.is_selected, id]
         );
         return updatedClothes;
     } catch (error) {
