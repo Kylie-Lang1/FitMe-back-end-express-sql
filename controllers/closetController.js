@@ -11,8 +11,9 @@ const {
 
 // READ ROUTES
 closet.get('/', async (req, res) => {
+    console.log("hello")
     const allClothes = await getAllClothes();
-
+    console.log("allClothes: ", allClothes)
     if (allClothes){
         res.status(200).json(allClothes);
     } else {
