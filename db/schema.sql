@@ -19,6 +19,8 @@ CREATE table clothes (
     is_selected BOOLEAN
 );
 
+DROP TABLE IF EXISTS outfits;
+
 CREATE TABLE outfits (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50),

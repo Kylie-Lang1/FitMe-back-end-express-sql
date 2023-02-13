@@ -54,4 +54,4 @@ VALUES
     true, 
     false,
     false
-)
+);
