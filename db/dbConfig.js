@@ -16,5 +16,5 @@ const cn = {
 // PG_PROMISE
 const db = pgp(cn)
 
-// EXPORT
+// EXPORTww
 module.exports = db;

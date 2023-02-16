@@ -29,6 +29,6 @@ CREATE TABLE outfits (
     img3_url TEXT,
     img4_url TEXT,
     img5_url TEXT,
-    is_favorite BOOLEAN
+    img6_url TEXT
 );
 

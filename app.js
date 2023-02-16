@@ -2,6 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const closetController = require('./controllers/closetController');
+const outfitsController = require('./controllers/outfitsController');
 
 // CONFIGURATION
 const app = express();
@@ -10,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/closet', closetController)
+app.use('/outfits', outfitsController)
 
 
 // ROUTES

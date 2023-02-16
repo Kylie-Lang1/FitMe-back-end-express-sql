@@ -55,3 +55,16 @@ VALUES
     false,
     false
 );
+
+INSERT INTO outfits
+(name, img1_url, img2_url, img3_url, img4_url, img5_url, img6_url)
+VALUES 
+(
+    'Going Out',
+    'https://cdn.shopify.com/s/files/1/0237/3346/9261/products/3D-Set-Front_1ee772ac-ccd3-4c55-bc71-224facc5fe4f_1100x.jpg?v=1674910743',
+    'https://www.prada.com/content/dam/pradabkg_products/1/1NE/1NE204/R064F0002/1NE204_R064_F0002_SLF.jpg/jcr:content/renditions/cq5dam.web.hebebed.1250.1250.jpg,https://www.prada.com/content/dam/pradabkg_products/1/1NE/1NE204/R064F0002/1NE204_R064_F0002_SLF.jpg/jcr:content/renditions/cq5dam.web.hebebed.2000.2000.jpg', 
+    'https://image.harrods.com/mach-mach-leather-double-bow-glitter-pumps-110_17464163_36632699_1000.jpg',
+    null,
+    null,
+    null
+)
