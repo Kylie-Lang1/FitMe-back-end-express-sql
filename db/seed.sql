@@ -3,7 +3,7 @@
 
 -- Insert seed data
 INSERT INTO clothes 
-(name, brand, category, img_url, shop_url, is_Favorite, is_Owned, is_selected)
+(name, brand, category, img_url, shop_url, is_Favorite, is_owned, is_selected)
 VALUES
 (
     'Prada Re-Edition 2005 Re-Nylon mini bag', 
@@ -67,4 +67,4 @@ VALUES
     null,
     null,
     null
-)
+);
